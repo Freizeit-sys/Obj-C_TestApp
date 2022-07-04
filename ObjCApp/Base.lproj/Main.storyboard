@@ -151,7 +151,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hF-W3-HNv" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="52" width="382" height="72"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="参照先はこちらです。明日は晴れるでしょう。まちがいありません。" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpl-NM-JZF">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="参照先はこちらです。明日は晴れるでしょう。まちがいありません。  いま絶対誰も覚えてなかったわどうでもいいです" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpl-NM-JZF">
                                                 <rect key="frame" x="16" y="8" width="350" height="56"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
@@ -222,20 +222,30 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WR1-rY-Ai3" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="52" width="382" height="72"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="参照先はこちらです。明日は晴れるでしょう。まちがいありません。" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhp-2r-3aS">
-                                                <rect key="frame" x="16" y="0.0" width="350" height="72"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name=".HiraKakuInterface-W3" family=".Hiragino Kaku Gothic Interface" pointSize="14"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xhp-2r-3aS">
+                                                <rect key="frame" x="16" y="8" width="350" height="56"/>
+                                                <color key="backgroundColor" systemColor="linkColor"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="参照先はこちらです。明日は晴れるでしょう。まちがいありません。  いま絶対誰も覚えてなかったわどうでもいいです.">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="14" name="HiraginoSans-W3"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" maximumLineHeight="12" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="BDA-kI-rc2"/>
+                                                </connections>
                                             </textView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="Xhp-2r-3aS" secondAttribute="bottom" id="0Zf-Sq-UEN"/>
+                                            <constraint firstAttribute="bottom" secondItem="Xhp-2r-3aS" secondAttribute="bottom" constant="8" id="0Zf-Sq-UEN"/>
                                             <constraint firstItem="Xhp-2r-3aS" firstAttribute="leading" secondItem="WR1-rY-Ai3" secondAttribute="leading" constant="16" id="2d9-64-8No"/>
                                             <constraint firstAttribute="trailing" secondItem="Xhp-2r-3aS" secondAttribute="trailing" constant="16" id="3wb-0u-Uqd"/>
-                                            <constraint firstItem="Xhp-2r-3aS" firstAttribute="top" secondItem="WR1-rY-Ai3" secondAttribute="top" id="BiS-1r-sjV"/>
+                                            <constraint firstItem="Xhp-2r-3aS" firstAttribute="top" secondItem="WR1-rY-Ai3" secondAttribute="top" constant="8" id="BiS-1r-sjV"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Pqx-40-ZbQ"/>
                                         </constraints>
                                     </view>
@@ -297,6 +307,7 @@
                         <outlet property="menuView2" destination="wqY-jm-8Ak" id="bdA-i7-Ifw"/>
                         <outlet property="menuView3" destination="FMR-Us-v7U" id="ZgS-mU-iFA"/>
                         <outlet property="menuViewHeightAnchor" destination="Jw6-f1-iNR" id="kBx-90-iw5"/>
+                        <outlet property="textView1" destination="Xhp-2r-3aS" id="dbn-74-YWZ"/>
                         <outlet property="textView2" destination="rp5-uk-y3l" id="6mS-aD-ac2"/>
                         <outlet property="textView3" destination="rp5-uk-y3l" id="QTX-zx-KLq"/>
                     </connections>
@@ -559,6 +570,9 @@
         <image name="add" width="24" height="24"/>
         <image name="info" width="24" height="24"/>
         <image name="tray.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -570,6 +584,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
