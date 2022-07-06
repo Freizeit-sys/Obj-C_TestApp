@@ -41,6 +41,10 @@
 		84AB8FC8284C572900087A6E /* WalletChargeSelectionCellHeaderView.h in Sources */ = {isa = PBXBuildFile; fileRef = 84AB8FC4284C553900087A6E /* WalletChargeSelectionCellHeaderView.h */; };
 		84AB8FC9284C572900087A6E /* WalletChargeSelectionCellHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AB8FC5284C553900087A6E /* WalletChargeSelectionCellHeaderView.m */; };
 		84AB8FCB284C65F100087A6E /* WalletChargeSelectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AB8FCA284C65F100087A6E /* WalletChargeSelectionHeaderView.xib */; };
+		84CC62F72875C6D200F5F3A3 /* TestTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CC62F62875C6D100F5F3A3 /* TestTextView.xib */; };
+		84CC62F92875CD8700F5F3A3 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CC62F82875CD8700F5F3A3 /* CustomView.m */; };
+		84CC62FB2875D4B100F5F3A3 /* AccViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 8435F66B2870503300A59A91 /* AccViewController.h */; };
+		84CC62FC2875D4B700F5F3A3 /* CustomView.h in Sources */ = {isa = PBXBuildFile; fileRef = 84CC62FA2875D07400F5F3A3 /* CustomView.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +81,9 @@
 		84AB8FC4284C553900087A6E /* WalletChargeSelectionCellHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletChargeSelectionCellHeaderView.h; sourceTree = "<group>"; };
 		84AB8FC5284C553900087A6E /* WalletChargeSelectionCellHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletChargeSelectionCellHeaderView.m; sourceTree = "<group>"; };
 		84AB8FCA284C65F100087A6E /* WalletChargeSelectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletChargeSelectionHeaderView.xib; sourceTree = "<group>"; };
+		84CC62F62875C6D100F5F3A3 /* TestTextView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestTextView.xib; sourceTree = "<group>"; };
+		84CC62F82875CD8700F5F3A3 /* CustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		84CC62FA2875D07400F5F3A3 /* CustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
 		84DAEE49274DDA8B00566625 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 		84DAEE4B274E16C300566625 /* Sankaku.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sankaku.m; sourceTree = "<group>"; };
 		84DAEE4D274E170A00566625 /* Sankaku.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sankaku.h; sourceTree = "<group>"; };
@@ -149,6 +156,9 @@
 				84DAEE4E274E222600566625 /* NSDate.m */,
 				8435F66B2870503300A59A91 /* AccViewController.h */,
 				8435F66D2870506700A59A91 /* AccViewController.m */,
+				84CC62F62875C6D100F5F3A3 /* TestTextView.xib */,
+				84CC62F82875CD8700F5F3A3 /* CustomView.m */,
+				84CC62FA2875D07400F5F3A3 /* CustomView.h */,
 			);
 			path = ObjCApp;
 			sourceTree = "<group>";
@@ -213,6 +223,7 @@
 				8421C3A12745D909003AF2C9 /* LaunchScreen.storyboard in Resources */,
 				84AB8FCB284C65F100087A6E /* WalletChargeSelectionHeaderView.xib in Resources */,
 				8421C39E2745D909003AF2C9 /* Assets.xcassets in Resources */,
+				84CC62F72875C6D200F5F3A3 /* TestTextView.xib in Resources */,
 				8421C39C2745D909003AF2C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +235,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CC62FC2875D4B700F5F3A3 /* CustomView.h in Sources */,
+				84CC62FB2875D4B100F5F3A3 /* AccViewController.h in Sources */,
 				84AB8FC8284C572900087A6E /* WalletChargeSelectionCellHeaderView.h in Sources */,
 				84AB8FC9284C572900087A6E /* WalletChargeSelectionCellHeaderView.m in Sources */,
 				84AB8FC1284C513100087A6E /* TableViewController.h in Sources */,
@@ -240,6 +253,7 @@
 				8467008E2793F19400450342 /* ButtonsViewController.m in Sources */,
 				846700812793EEDF00450342 /* DetailViewController.h in Sources */,
 				846700822793EEDF00450342 /* DetailViewController.m in Sources */,
+				84CC62F92875CD8700F5F3A3 /* CustomView.m in Sources */,
 				846700832793EEDF00450342 /* CollectionViewController.h in Sources */,
 				846700842793EEDF00450342 /* CollectionViewController.m in Sources */,
 				846700852793EEDF00450342 /* BottomSheetView.h in Sources */,
