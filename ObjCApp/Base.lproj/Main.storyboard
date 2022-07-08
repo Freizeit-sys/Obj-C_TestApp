@@ -568,13 +568,13 @@
         <!--View Controller-->
         <scene sceneID="39a-rY-vz6">
             <objects>
-                <viewController id="KvH-WK-hDZ" sceneMemberID="viewController">
+                <viewController id="KvH-WK-hDZ" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3CO-dn-r99">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="120" translatesAutoresizingMaskIntoConstraints="NO" id="79n-5i-rBY" userLabel="A View">
-                                <rect key="frame" x="16" y="280" width="382" height="120"/>
+                                <rect key="frame" x="16" y="204" width="382" height="120"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lEH-Gk-Czh">
                                         <rect key="frame" x="16" y="16" width="350" height="88"/>
@@ -600,15 +600,15 @@
                                     <constraint firstAttribute="bottom" secondItem="lEH-Gk-Czh" secondAttribute="bottom" constant="16" id="vq2-Qr-WzC"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="Oee-Vu-VJg" customClass="CustomView">
-                                <rect key="frame" x="16" y="128" width="382" height="128"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oee-Vu-VJg" customClass="CustomView">
+                                <rect key="frame" x="16" y="128" width="382" height="52"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="WeS-9s-vBy"/>
+                                    <constraint firstAttribute="height" constant="52" id="WeS-9s-vBy"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="120" translatesAutoresizingMaskIntoConstraints="NO" id="yCR-Vt-99Y" userLabel="B View">
-                                <rect key="frame" x="16" y="424" width="382" height="120"/>
+                                <rect key="frame" x="16" y="348" width="382" height="120"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="W3U-Jp-I2V">
                                         <rect key="frame" x="16" y="54.5" width="350" height="49.5"/>
@@ -637,29 +637,72 @@
                                     <constraint firstAttribute="trailing" secondItem="R55-J6-peq" secondAttribute="trailing" constant="16" id="s2o-ka-mPn"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yot-0g-z2Q" customClass="CustomView2">
+                                <rect key="frame" x="16" y="492" width="382" height="52"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="jed-sn-9g9"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tqb-wk-Ugh" customClass="CustomView2">
+                                <rect key="frame" x="16" y="568" width="382" height="52"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="pzx-vF-krj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zyv-mh-0NO" customClass="CustomView2">
+                                <rect key="frame" x="16" y="644" width="382" height="52"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="pff-dS-RB6"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iRd-nV-2ko"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="iRd-nV-2ko" firstAttribute="trailing" secondItem="zyv-mh-0NO" secondAttribute="trailing" constant="16" id="5vt-Ok-7XW"/>
                             <constraint firstItem="Oee-Vu-VJg" firstAttribute="leading" secondItem="iRd-nV-2ko" secondAttribute="leading" constant="16" id="65a-Rj-4YI"/>
                             <constraint firstItem="iRd-nV-2ko" firstAttribute="trailing" secondItem="yCR-Vt-99Y" secondAttribute="trailing" constant="16" id="Aya-92-qHr"/>
+                            <constraint firstItem="yot-0g-z2Q" firstAttribute="leading" secondItem="iRd-nV-2ko" secondAttribute="leading" constant="16" id="JcQ-iN-lAl"/>
+                            <constraint firstItem="zyv-mh-0NO" firstAttribute="top" secondItem="tqb-wk-Ugh" secondAttribute="bottom" constant="24" id="MyX-IF-vJi"/>
+                            <constraint firstItem="yot-0g-z2Q" firstAttribute="top" secondItem="yCR-Vt-99Y" secondAttribute="bottom" constant="24" id="R1Z-Xi-lPe"/>
                             <constraint firstItem="79n-5i-rBY" firstAttribute="top" secondItem="Oee-Vu-VJg" secondAttribute="bottom" constant="24" id="ZMf-FA-lmL"/>
+                            <constraint firstItem="tqb-wk-Ugh" firstAttribute="top" secondItem="yot-0g-z2Q" secondAttribute="bottom" constant="24" id="a9C-kN-nYa"/>
                             <constraint firstItem="79n-5i-rBY" firstAttribute="leading" secondItem="iRd-nV-2ko" secondAttribute="leading" constant="16" id="fQB-VD-bo5"/>
                             <constraint firstItem="iRd-nV-2ko" firstAttribute="trailing" secondItem="79n-5i-rBY" secondAttribute="trailing" constant="16" id="gW2-2f-BUX"/>
                             <constraint firstItem="yCR-Vt-99Y" firstAttribute="leading" secondItem="iRd-nV-2ko" secondAttribute="leading" constant="16" id="mJ9-AB-zxU"/>
+                            <constraint firstItem="zyv-mh-0NO" firstAttribute="leading" secondItem="iRd-nV-2ko" secondAttribute="leading" constant="16" id="mkZ-0x-liG"/>
+                            <constraint firstItem="tqb-wk-Ugh" firstAttribute="leading" secondItem="iRd-nV-2ko" secondAttribute="leading" constant="16" id="n9r-Rl-MTZ"/>
                             <constraint firstItem="79n-5i-rBY" firstAttribute="centerX" secondItem="3CO-dn-r99" secondAttribute="centerX" id="oOh-Aq-78U"/>
                             <constraint firstItem="Oee-Vu-VJg" firstAttribute="top" secondItem="iRd-nV-2ko" secondAttribute="top" constant="40" id="uGe-SP-fRb"/>
                             <constraint firstItem="yCR-Vt-99Y" firstAttribute="top" secondItem="79n-5i-rBY" secondAttribute="bottom" constant="24" id="ugG-Pu-FfP"/>
+                            <constraint firstItem="iRd-nV-2ko" firstAttribute="trailing" secondItem="tqb-wk-Ugh" secondAttribute="trailing" constant="16" id="v9h-aY-3x8"/>
                             <constraint firstItem="iRd-nV-2ko" firstAttribute="trailing" secondItem="Oee-Vu-VJg" secondAttribute="trailing" constant="16" id="w14-wN-iIP"/>
+                            <constraint firstItem="iRd-nV-2ko" firstAttribute="trailing" secondItem="yot-0g-z2Q" secondAttribute="trailing" constant="16" id="zif-YR-uUX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wme-Ge-YA3"/>
+                    <connections>
+                        <outlet property="customView2" destination="yot-0g-z2Q" id="xVW-6m-zSc"/>
+                        <outlet property="customView22" destination="tqb-wk-Ugh" id="6Xu-tr-2Jc"/>
+                        <outlet property="customView222" destination="zyv-mh-0NO" id="fXI-Gg-rKz"/>
+                        <outlet property="customView222HeightAnchor" destination="pff-dS-RB6" id="mI2-y7-ZUd"/>
+                        <outlet property="customView22HeightAnchor" destination="pzx-vF-krj" id="aQl-TA-IiR"/>
+                        <outlet property="customView2HeightAnchor" destination="jed-sn-9g9" id="iw8-ZK-X4p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7lV-1T-OyY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="402.89855072463769" y="30.803571428571427"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="Oee-Vu-VJg">
+            <size key="intrinsicContentSize" width="382" height="128"/>
+        </designable>
+    </designables>
     <resources>
         <image name="add" width="24" height="24"/>
         <image name="info" width="24" height="24"/>

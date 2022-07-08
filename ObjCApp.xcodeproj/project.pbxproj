@@ -35,6 +35,8 @@
 		8467008E2793F19400450342 /* ButtonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8467008D2793F19400450342 /* ButtonsViewController.m */; };
 		847381ED284C4FB70055BFC8 /* WalletChargeSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847381EA284C477A0055BFC8 /* WalletChargeSelectionViewController.m */; };
 		847381EE284C4FBE0055BFC8 /* WalletChargeSelectionViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 847381E9284C477A0055BFC8 /* WalletChargeSelectionViewController.h */; };
+		84AB20D32877FBBA00C93929 /* CustomView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AB20D22877FBBA00C93929 /* CustomView2.xib */; };
+		84AB20D92877FC3900C93929 /* CustomView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AB20D82877FC3900C93929 /* CustomView2.m */; };
 		84AB8FC1284C513100087A6E /* TableViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 8421C3AB2745EF85003AF2C9 /* TableViewController.h */; };
 		84AB8FC2284C513100087A6E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8421C3AD2745F229003AF2C9 /* TableViewController.m */; };
 		84AB8FC3284C513100087A6E /* ButtonsViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 8467008C2793F19400450342 /* ButtonsViewController.h */; };
@@ -76,8 +78,11 @@
 		8435F66D2870506700A59A91 /* AccViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccViewController.m; sourceTree = "<group>"; };
 		8467008C2793F19400450342 /* ButtonsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonsViewController.h; sourceTree = "<group>"; };
 		8467008D2793F19400450342 /* ButtonsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonsViewController.m; sourceTree = "<group>"; };
-		847381E9284C477A0055BFC8 /* WalletChargeSelectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WalletChargeSelectionViewController.h; path = ../WalletChargeSelectionViewController.h; sourceTree = "<group>"; };
+		847381E9284C477A0055BFC8 /* WalletChargeSelectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletChargeSelectionViewController.h; sourceTree = "<group>"; };
 		847381EA284C477A0055BFC8 /* WalletChargeSelectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletChargeSelectionViewController.m; sourceTree = "<group>"; };
+		84AB20D22877FBBA00C93929 /* CustomView2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView2.xib; sourceTree = "<group>"; };
+		84AB20D72877FC3900C93929 /* CustomView2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomView2.h; sourceTree = "<group>"; };
+		84AB20D82877FC3900C93929 /* CustomView2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomView2.m; sourceTree = "<group>"; };
 		84AB8FC4284C553900087A6E /* WalletChargeSelectionCellHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletChargeSelectionCellHeaderView.h; sourceTree = "<group>"; };
 		84AB8FC5284C553900087A6E /* WalletChargeSelectionCellHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletChargeSelectionCellHeaderView.m; sourceTree = "<group>"; };
 		84AB8FCA284C65F100087A6E /* WalletChargeSelectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletChargeSelectionHeaderView.xib; sourceTree = "<group>"; };
@@ -121,21 +126,21 @@
 		8421C3902745D909003AF2C9 /* ObjCApp */ = {
 			isa = PBXGroup;
 			children = (
-				84AB8FC4284C553900087A6E /* WalletChargeSelectionCellHeaderView.h */,
-				84AB8FC5284C553900087A6E /* WalletChargeSelectionCellHeaderView.m */,
-				847381E9284C477A0055BFC8 /* WalletChargeSelectionViewController.h */,
-				847381EA284C477A0055BFC8 /* WalletChargeSelectionViewController.m */,
-				8421C3912745D909003AF2C9 /* AppDelegate.h */,
-				8421C3922745D909003AF2C9 /* AppDelegate.m */,
-				8421C3942745D909003AF2C9 /* SceneDelegate.h */,
-				8421C3952745D909003AF2C9 /* SceneDelegate.m */,
-				8421C3972745D909003AF2C9 /* ViewController.h */,
-				8421C3982745D909003AF2C9 /* ViewController.m */,
+				84AB20D62877FC0200C93929 /* CustomView2 */,
+				84AB20D52877FBF500C93929 /* CustomView */,
+				84AB20D42877FBDB00C93929 /* old */,
 				8421C39A2745D909003AF2C9 /* Main.storyboard */,
 				8421C39D2745D909003AF2C9 /* Assets.xcassets */,
 				8421C39F2745D909003AF2C9 /* LaunchScreen.storyboard */,
 				8421C3A22745D909003AF2C9 /* Info.plist */,
 				8421C3A32745D909003AF2C9 /* main.m */,
+			);
+			path = ObjCApp;
+			sourceTree = "<group>";
+		};
+		84AB20D42877FBDB00C93929 /* old */ = {
+			isa = PBXGroup;
+			children = (
 				8421C3AB2745EF85003AF2C9 /* TableViewController.h */,
 				8421C3AD2745F229003AF2C9 /* TableViewController.m */,
 				8421C3C427461E0B003AF2C9 /* CustomCell.h */,
@@ -156,11 +161,38 @@
 				84DAEE4E274E222600566625 /* NSDate.m */,
 				8435F66B2870503300A59A91 /* AccViewController.h */,
 				8435F66D2870506700A59A91 /* AccViewController.m */,
+				84AB8FC4284C553900087A6E /* WalletChargeSelectionCellHeaderView.h */,
+				84AB8FC5284C553900087A6E /* WalletChargeSelectionCellHeaderView.m */,
+				847381E9284C477A0055BFC8 /* WalletChargeSelectionViewController.h */,
+				847381EA284C477A0055BFC8 /* WalletChargeSelectionViewController.m */,
+				8421C3912745D909003AF2C9 /* AppDelegate.h */,
+				8421C3922745D909003AF2C9 /* AppDelegate.m */,
+				8421C3942745D909003AF2C9 /* SceneDelegate.h */,
+				8421C3952745D909003AF2C9 /* SceneDelegate.m */,
+				8421C3972745D909003AF2C9 /* ViewController.h */,
+				8421C3982745D909003AF2C9 /* ViewController.m */,
+			);
+			path = old;
+			sourceTree = "<group>";
+		};
+		84AB20D52877FBF500C93929 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
 				84CC62F62875C6D100F5F3A3 /* TestTextView.xib */,
 				84CC62F82875CD8700F5F3A3 /* CustomView.m */,
 				84CC62FA2875D07400F5F3A3 /* CustomView.h */,
 			);
-			path = ObjCApp;
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		84AB20D62877FC0200C93929 /* CustomView2 */ = {
+			isa = PBXGroup;
+			children = (
+				84AB20D22877FBBA00C93929 /* CustomView2.xib */,
+				84AB20D72877FC3900C93929 /* CustomView2.h */,
+				84AB20D82877FC3900C93929 /* CustomView2.m */,
+			);
+			path = CustomView2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +257,7 @@
 				8421C39E2745D909003AF2C9 /* Assets.xcassets in Resources */,
 				84CC62F72875C6D200F5F3A3 /* TestTextView.xib in Resources */,
 				8421C39C2745D909003AF2C9 /* Main.storyboard in Resources */,
+				84AB20D32877FBBA00C93929 /* CustomView2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +293,7 @@
 				846700862793EEDF00450342 /* BottomSheetView.m in Sources */,
 				846700872793EEDF00450342 /* Test.m in Sources */,
 				846700882793EEDF00450342 /* Sankaku.h in Sources */,
+				84AB20D92877FC3900C93929 /* CustomView2.m in Sources */,
 				846700892793EEDF00450342 /* Sankaku.m in Sources */,
 				8467008A2793EEDF00450342 /* NSDate.m in Sources */,
 				846700742793EED700450342 /* AppDelegate.h in Sources */,
